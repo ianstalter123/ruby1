@@ -9,7 +9,9 @@ puts "a multiplication table:"
 while w <= 9
 
 	while h <= 9
-		str += " " + (w*h).to_s
+		x = (w*h).to_s
+		#well it works somehow for alignment!
+		str += "%-3d  " % x
 		h+=1
 	end
 	h = 1

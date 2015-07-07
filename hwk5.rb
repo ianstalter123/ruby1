@@ -1,4 +1,7 @@
-total = 9
+puts "enter height"
+width = gets.chomp.to_i
+puts "enter width"
+height = gets.chomp.to_i
 i = 0
 str = ""
 line = ""
@@ -8,7 +11,7 @@ a = 1
 
 puts "a multiplication table:"
 
-while a <= 9
+while a <= height
 
 x = a.to_s
 str += "  %-3d" % x
@@ -20,10 +23,10 @@ puts str
 puts line
 
 str = ""
-while w <= 9
+while w <= width
 x = w.to_s
 str += x + "|"
-	while h <= 9
+	while h <= height
 		x = (w*h).to_s
 		#well it works somehow for alignment!
 		str += "%-3d  " % x
